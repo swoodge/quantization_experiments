@@ -1,0 +1,8 @@
+Checkpoint: /home/dashilovskiy/nanoGPT/checkpoints/lr0.001_nl6_nh8_bs32/ckpt.pt
+QAT iters: 1000
+
+Method                      Val loss   Perplexity    Size MB    PPL delta
+----------------------------------------------------------------------
+float32_baseline              1.4602       4.3070       41.0     baseline
+ptq_int8_dynamic              1.4630       4.3187        0.5       +0.27%
+qat_int8_dynamic              1.4624       4.3161       41.0       +0.21%

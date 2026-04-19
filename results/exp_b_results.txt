@@ -1,0 +1,13 @@
+Experiment B: quantization sensitivity by model size
+QAT iters: 1000
+
+Model                Method                 Val loss        PPL    PPL delta
+--------------------------------------------------------------------------------
+small (nl=6)         float32_baseline         1.4603     4.3073     baseline
+small (nl=6)         ptq_int8                 1.4638     4.3222       0.348%
+small (nl=6)         qat_int8                 1.4612     4.3113       0.093%
+
+large (nl=12)        float32_baseline         1.4706     4.3518     baseline
+large (nl=12)        ptq_int8                 1.4676     4.3386      -0.302%
+large (nl=12)        qat_int8                 1.4790     4.3886       0.847%
+

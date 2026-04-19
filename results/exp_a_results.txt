@@ -1,0 +1,11 @@
+Experiment A: QAT steps vs quality
+Checkpoint: /home/dashilovskiy/nanoGPT/checkpoints/lr0.001_nl6_nh8_bs32/ckpt.pt
+
+Method                             Val loss   Perplexity    Size MB    PPL delta
+--------------------------------------------------------------------------------
+float32_baseline                     1.4597       4.3047       41.0     baseline
+qat_0_steps                          1.4614       4.3122       41.0      +0.175%
+qat_500_steps                        1.4620       4.3144       41.0      +0.226%
+qat_1000_steps                       1.4558       4.2877       41.0      -0.393%
+qat_3000_steps                       1.4633       4.3203       41.0      +0.364%
+qat_5000_steps                       1.4697       4.3479       41.0      +1.004%
